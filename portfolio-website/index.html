@@ -4,211 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KapriTech is the Day 1 portfolio and founder journey of Suman Kapri, an aspiring learner building skills in web development and technology.">
+    <meta name="description" content="KapriTech is the Day 2 portfolio and founder journey of Suman Kapri, an aspiring learner building skills in web development and technology.">
+    <meta property="og:title" content="KapriTech | Suman Kapri Portfolio">
+    <meta property="og:description" content="Day 2 portfolio, public learning, and the founder journey of Suman Kapri.">
+    <meta property="og:image" content="assets/social-preview.svg">
     <title>KapriTech | Suman Kapri Portfolio</title>
+    <link rel="icon" href="assets/kapritech-mark.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="site-header">
         <nav class="nav">
-            <a class="brand" href="#home" aria-label="KapriTech home">
-                <span class="brand-mark">KT</span>
+            <a class="brand" href="index.html" aria-label="KapriTech home">
+                <img class="brand-mark" src="assets/kapritech-mark.svg" alt="">
                 <span>KapriTech</span>
             </a>
 
             <div class="nav-links" aria-label="Main navigation">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="learning.html">Learning</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero" id="home">
+        <section class="hero">
             <div class="hero-copy">
-                <p class="eyebrow">Day 1 portfolio website</p>
+                <p class="eyebrow">Day 2 portfolio website</p>
                 <h1>Suman Kapri is building KapriTech in public.</h1>
                 <p class="hero-text">
-                    I am an aspiring learner, beginner developer, and founder growing a personal name and brand one project at a time.
-                    KapriTech is where I practice, document, improve, and turn small skills into real digital products.
+                    KapriTech is my personal brand, learning base, and public journey as I grow from basics into real web development, practical websites, and useful digital products.
                 </p>
 
                 <div class="hero-actions">
-                    <a class="button primary" href="#projects">Explore work</a>
-                    <a class="button secondary" href="#contact">Contact me</a>
+                    <a class="button primary" href="projects.html">Explore work</a>
+                    <a class="button secondary" href="learning.html">See learning plan</a>
                 </div>
             </div>
 
-            <div class="hero-panel" aria-label="KapriTech learning snapshot">
-                <div class="panel-top">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="code-line"><span>const founder</span> = "Suman Kapri";</div>
-                <div class="code-line"><span>brand</span>.build("KapriTech");</div>
-                <div class="code-line"><span>focus</span> = ["HTML", "CSS", "GitHub"];</div>
-                <div class="code-line"><span>mission</span> = "learn fast, build useful";</div>
-                <div class="status-row">
-                    <strong>Now building</strong>
-                    <small>Portfolio, founder diary, learning notes</small>
-                </div>
+            <div class="hero-visual">
+                <img src="assets/hero-workspace.svg" alt="Illustration of the KapriTech learning workspace">
             </div>
         </section>
 
-        <section class="section about-section" id="about">
+        <section class="section day-wrap">
             <div class="section-heading">
-                <p class="eyebrow">About the founder</p>
-                <h2>Beginner today, better every day.</h2>
+                <p class="eyebrow">Day 2 wrap-up</p>
+                <h2>The foundation is now a real multi-page portfolio.</h2>
             </div>
 
-            <div class="about-grid">
-                <article class="story">
-                    <h3>Who I am</h3>
-                    <p>
-                        I am Suman Kapri, founder of KapriTech. I know the basics and I am moving fast by building real pages,
-                        improving my design sense, learning GitHub, and making my progress visible.
-                    </p>
-                    <p>
-                        This website is not the final version. It is the first working version of a brand that will improve with time,
-                        feedback, practice, and stronger projects.
-                    </p>
-                </article>
-
-                <div class="founder-card">
-                    <span class="avatar">SK</span>
-                    <h3>Suman Kapri</h3>
-                    <p>Founder, learner, future developer</p>
-                    <dl>
-                        <div>
-                            <dt>Brand</dt>
-                            <dd>KapriTech</dd>
-                        </div>
-                        <div>
-                            <dt>Stage</dt>
-                            <dd>Day 1 build</dd>
-                        </div>
-                        <div>
-                            <dt>Direction</dt>
-                            <dd>Frontend and useful digital products</dd>
-                        </div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="skills">
-            <div class="section-heading">
-                <p class="eyebrow">Learning stack</p>
-                <h2>Skills I am practicing now.</h2>
-            </div>
-
-            <div class="skills-grid">
+            <div class="status-grid">
                 <article>
-                    <span>01</span>
-                    <h3>HTML</h3>
-                    <p>Writing clean structure, sections, navigation, links, and portfolio content.</p>
+                    <strong>Built</strong>
+                    <p>Home, About, Learning, Solutions, Projects, and Contact pages with shared navigation.</p>
                 </article>
                 <article>
-                    <span>02</span>
-                    <h3>CSS</h3>
-                    <p>Building layouts, responsive design, colors, spacing, buttons, and readable pages.</p>
+                    <strong>Added</strong>
+                    <p>Brand assets, project visuals, founder photo, social preview, and skill icons.</p>
                 </article>
                 <article>
-                    <span>03</span>
-                    <h3>Git and GitHub</h3>
-                    <p>Saving progress, publishing work, and building a public developer record.</p>
+                    <strong>Next</strong>
+                    <p>Publish real project links, add JavaScript interactions, and write founder diary updates.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Start here</p>
+                <h2>A simple website that can grow with the brand.</h2>
+            </div>
+
+            <div class="brand-showcase">
+                <img src="assets/kapritech-logo-horizontal.svg" alt="KapriTech logo with tagline">
+            </div>
+
+            <div class="quick-links">
+                <a href="about.html">
+                    <strong>About Suman</strong>
+                    <span>Founder story, direction, and current stage.</span>
+                </a>
+                <a href="learning.html">
+                    <strong>Learning</strong>
+                    <span>Current skills, roadmap, and next improvements.</span>
+                </a>
+                <a href="projects.html">
+                    <strong>Projects</strong>
+                    <span>Portfolio website, founder diary, and learning notes.</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">What KapriTech provides</p>
+                <h2>Simple digital help for people who need a clear online start.</h2>
+            </div>
+
+            <div class="value-grid">
+                <article>
+                    <h3>Portfolio and personal brand websites</h3>
+                    <p>Clean pages for students, learners, creators, and early professionals who need a public identity.</p>
                 </article>
                 <article>
-                    <span>04</span>
-                    <h3>JavaScript next</h3>
-                    <p>Adding interaction, logic, and better product experiences after the foundation is strong.</p>
+                    <h3>Small business web presence</h3>
+                    <p>Basic websites that explain what a business does, how to contact it, and why people should trust it.</p>
+                </article>
+                <article>
+                    <h3>Learning-first build process</h3>
+                    <p>Every project becomes practice, documentation, and a stronger foundation for the next version.</p>
                 </article>
             </div>
         </section>
 
-        <section class="section projects-section" id="projects">
-            <div class="section-heading">
-                <p class="eyebrow">Projects</p>
-                <h2>Current KapriTech work.</h2>
-            </div>
-
-            <div class="project-list">
-                <article class="project-card">
-                    <div>
-                        <p class="tag">Live foundation</p>
-                        <h3>Portfolio Website</h3>
-                    </div>
-                    <p>
-                        My first personal website built with HTML and CSS. It introduces my name, brand, learning journey,
-                        current skills, projects, and contact details.
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <div>
-                        <p class="tag">Public learning</p>
-                        <h3>KapriTech Founder Diary</h3>
-                    </div>
-                    <p>
-                        A place to document daily progress, lessons, mistakes, improvements, and the process of building a technology brand.
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <div>
-                        <p class="tag">Knowledge base</p>
-                        <h3>Learning Notes</h3>
-                    </div>
-                    <p>
-                        Notes from web development practice, GitHub learning, design improvements, and future JavaScript study.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <section class="section roadmap-section">
-            <div class="section-heading">
-                <p class="eyebrow">Growth plan</p>
-                <h2>What improves next.</h2>
-            </div>
-
-            <div class="roadmap">
-                <div>
-                    <strong>Step 1</strong>
-                    <p>Build and polish this portfolio until it feels clear, trustworthy, and personal.</p>
-                </div>
-                <div>
-                    <strong>Step 2</strong>
-                    <p>Publish projects consistently and write short notes about what each project teaches.</p>
-                </div>
-                <div>
-                    <strong>Step 3</strong>
-                    <p>Learn JavaScript deeply enough to create interactive tools and real product features.</p>
-                </div>
-                <div>
-                    <strong>Step 4</strong>
-                    <p>Grow KapriTech step by step into a useful technology company.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section contact-section" id="contact">
-            <div>
-                <p class="eyebrow">Contact</p>
-                <h2>Let us build, learn, and improve.</h2>
-                <p>
-                    I am open to learning opportunities, beginner-friendly collaborations, feedback, and project ideas that help KapriTech grow.
-                </p>
-            </div>
-
-            <div class="contact-box">
-                <a href="mailto:kapri.suman0023@gmail.com">kapri.suman0023@gmail.com</a>
-                <a href="https://github.com/kapritech" target="_blank" rel="noreferrer">github.com/kapritech</a>
-            </div>
+        <section class="section final-cta">
+            <p class="eyebrow">Ready for Day 3</p>
+            <h2>Next, KapriTech should publish and prove.</h2>
+            <p>
+                The next useful move is to make each project clickable, document what was learned, and add small JavaScript features that improve the experience.
+            </p>
+            <a class="button primary" href="contact.html">Connect with KapriTech</a>
         </section>
     </main>
 
