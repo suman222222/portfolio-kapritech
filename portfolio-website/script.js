@@ -4,6 +4,14 @@ const filterButtons = document.querySelectorAll(".filter-button");
 const projectCards = document.querySelectorAll(".project-card");
 const futureCards = document.querySelectorAll(".future-card");
 const contactForm = document.querySelector(".contact-form");
+const messageButtons = document.querySelectorAll(".message-button");
+const alertButton = document.querySelector(".alert-button");
+const statsUpdateButton = document.querySelector(".stats-update-button");
+const messageOutput = document.querySelector("#message-output");
+const statDays = document.querySelector("#stat-days");
+const statPages = document.querySelector("#stat-pages");
+const statProjects = document.querySelector("#stat-projects");
+const statFeatures = document.querySelector("#stat-features");
 
 if (navToggle && navLinks) {
     navToggle.addEventListener("click", () => {
@@ -22,7 +30,42 @@ if (navToggle && navLinks) {
 }
 
 function welcomeUser() {
-    alert("Welcome to KaPriTech");
+    alert("Welcome to KapriTech. You are viewing the Day 4 JavaScript practice section.");
+}
+
+function updateMessage(message) {
+    if (messageOutput) {
+        messageOutput.textContent = message;
+    }
+}
+
+function increaseNumber(element, amount) {
+    if (element) {
+        element.textContent = Number(element.textContent) + amount;
+    }
+}
+
+messageButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        updateMessage(button.dataset.message);
+    });
+});
+
+if (alertButton) {
+    alertButton.addEventListener("click", () => {
+        welcomeUser();
+        updateMessage("The alert button used JavaScript to show a browser message.");
+    });
+}
+
+if (statsUpdateButton) {
+    statsUpdateButton.addEventListener("click", () => {
+        increaseNumber(statDays, 1);
+        increaseNumber(statPages, 1);
+        increaseNumber(statProjects, 1);
+        increaseNumber(statFeatures, 1);
+        updateMessage("Stats updated with DOM manipulation. The numbers changed without reloading the page.");
+    });
 }
 
 if (filterButtons.length > 0) {

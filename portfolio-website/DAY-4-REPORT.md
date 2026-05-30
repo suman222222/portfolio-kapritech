@@ -69,6 +69,16 @@ Added:
 * Skill and progress highlight badges
 * More polished background and color system
 
+## Message Buttons and Stats Added
+
+Added a homepage JavaScript practice section with:
+
+* Message buttons
+* Browser alert button
+* KapriTech stats
+* DOM text updates
+* DOM number updates
+
 ---
 
 # Problems Solved
@@ -97,6 +107,7 @@ Day 4 added real logic and conditions instead of only toggling a menu.
 * Contact form validation
 * Project filtering
 * Homepage welcome polish
+* Message buttons and KapriTech stats
 * Day 4 documentation
 
 ## In Progress

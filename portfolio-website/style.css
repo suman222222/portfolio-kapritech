@@ -312,7 +312,8 @@ h3 {
 .quick-links,
 .value-grid,
 .future-grid,
-.status-grid {
+.status-grid,
+.stats-grid {
     display: grid;
     gap: 18px;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -342,7 +343,8 @@ h3 {
 .quick-links a,
 .value-grid article,
 .future-grid article,
-.status-grid article {
+.status-grid article,
+.stats-grid article {
     background: rgba(255, 255, 255, 0.92);
     border: 1px solid var(--line);
     border-radius: 8px;
@@ -354,7 +356,8 @@ h3 {
 .quick-links a:hover,
 .value-grid article:hover,
 .future-grid article:hover,
-.status-grid article:hover {
+.status-grid article:hover,
+.stats-grid article:hover {
     box-shadow: var(--shadow);
     transform: translateY(-2px);
 }
@@ -397,6 +400,65 @@ h3 {
 
 .status-grid p {
     color: var(--muted);
+}
+
+.stats-section {
+    padding-top: 24px;
+}
+
+.stats-panel {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 28px;
+    padding: 28px;
+}
+
+.stats-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.stats-grid article {
+    background: #ffffff;
+    min-height: 132px;
+}
+
+.stats-grid span {
+    color: var(--blue);
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.stats-grid p {
+    color: var(--muted);
+    font-weight: 800;
+}
+
+.message-panel {
+    border-top: 1px solid var(--line);
+    display: grid;
+    gap: 18px;
+    padding-top: 24px;
+}
+
+.message-output {
+    background: var(--soft-green);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 800;
+    min-height: 64px;
+    padding: 18px;
+}
+
+.message-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .final-cta {
@@ -820,7 +882,8 @@ footer {
     .quick-links,
     .value-grid,
     .future-grid,
-    .status-grid {
+    .status-grid,
+    .stats-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -904,6 +967,7 @@ footer {
     .value-grid,
     .future-grid,
     .status-grid,
+    .stats-grid,
     .provide-list article {
         grid-template-columns: 1fr;
     }
