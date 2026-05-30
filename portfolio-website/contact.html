@@ -21,7 +21,14 @@
                 <span>KapriTech</span>
             </a>
 
-            <div class="nav-links" aria-label="Main navigation">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Open navigation</span>
+            </button>
+
+            <div class="nav-links" id="main-navigation" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="learning.html">Learning</a>
@@ -42,13 +49,43 @@
         <section class="section contact-section">
             <div>
                 <p class="eyebrow">Reach me</p>
-                <h2>Start with email, GitHub, or LinkedIn.</h2>
+                <h2>Send a clear project or feedback message.</h2>
                 <p>
-                    The best next step is a clear message about learning, feedback, or a small project idea.
+                    Use the form to prepare an email, or reach out directly through GitHub and LinkedIn.
                 </p>
             </div>
 
-            <div class="contact-box">
+            <form class="contact-form" novalidate>
+                <div class="field-group">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name">
+                    <p class="error-message" id="name-error"></p>
+                </div>
+
+                <div class="field-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email">
+                    <p class="error-message" id="email-error"></p>
+                </div>
+
+                <div class="field-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                    <p class="error-message" id="message-error"></p>
+                </div>
+
+                <button class="button primary" type="submit">Prepare email</button>
+                <p class="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="section contact-links-section">
+            <div class="section-heading">
+                <p class="eyebrow">Direct links</p>
+                <h2>Other ways to connect.</h2>
+            </div>
+
+            <div class="contact-box contact-links">
                 <img src="assets/contact-card.svg" alt="KapriTech contact card">
                 <a href="mailto:kapri.suman0023@gmail.com">kapri.suman0023@gmail.com</a>
                 <a href="https://github.com/kapritech" target="_blank" rel="noreferrer">github.com/kapritech</a>
@@ -80,8 +117,9 @@
     </main>
 
     <footer>
-        <p>2026 KapriTech. Built by Suman Kapri with HTML and CSS.</p>
+        <p>2026 KapriTech. Built by Suman Kapri with HTML, CSS, and JavaScript.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

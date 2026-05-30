@@ -21,7 +21,14 @@
                 <span>KapriTech</span>
             </a>
 
-            <div class="nav-links" aria-label="Main navigation">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Open navigation</span>
+            </button>
+
+            <div class="nav-links" id="main-navigation" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="learning.html">Learning</a>
@@ -40,8 +47,15 @@
         </section>
 
         <section class="section projects-section">
+            <div class="project-controls" aria-label="Project filters">
+                <button class="filter-button active" type="button" data-filter="all">All</button>
+                <button class="filter-button" type="button" data-filter="live">Live</button>
+                <button class="filter-button" type="button" data-filter="learning">Learning</button>
+                <button class="filter-button" type="button" data-filter="idea">Ideas</button>
+            </div>
+
             <div class="project-list">
-                <article class="project-card">
+                <a class="project-card" href="index.html" data-category="live" aria-label="Open Portfolio Website project">
                     <img src="assets/project-portfolio.svg" alt="Portfolio website project thumbnail">
                     <div>
                         <p class="tag">Live foundation</p>
@@ -51,9 +65,9 @@
                         My first personal website built with HTML and CSS. It introduces my name, brand, learning journey,
                         current skills, projects, and contact details.
                     </p>
-                </article>
+                </a>
 
-                <article class="project-card">
+                <a class="project-card" href="../founder-diary/index.html" data-category="learning" aria-label="Open KapriTech Founder Diary project">
                     <img src="assets/project-diary.svg" alt="Founder diary project thumbnail">
                     <div>
                         <p class="tag">Public learning</p>
@@ -62,9 +76,9 @@
                     <p>
                         A place to document daily progress, lessons, mistakes, improvements, and the process of building a technology brand.
                     </p>
-                </article>
+                </a>
 
-                <article class="project-card">
+                <a class="project-card" href="../learning-notes/index.html" data-category="learning" aria-label="Open Learning Notes project">
                     <img src="assets/project-notes.svg" alt="Learning notes project thumbnail">
                     <div>
                         <p class="tag">Knowledge base</p>
@@ -73,7 +87,7 @@
                     <p>
                         Notes from web development practice, GitHub learning, design improvements, and future JavaScript study.
                     </p>
-                </article>
+                </a>
             </div>
         </section>
 
@@ -84,22 +98,22 @@
             </div>
 
             <div class="future-grid">
-                <article>
+                <article class="future-card" data-category="idea">
                     <span>Idea 01</span>
                     <h3>Local Business Starter Site</h3>
                     <p>A clean one-page website package for small businesses with service details, contact links, and a trust-building layout.</p>
                 </article>
-                <article>
+                <article class="future-card" data-category="idea">
                     <span>Idea 02</span>
                     <h3>Student Progress Tracker</h3>
                     <p>A simple web app to track daily learning, completed lessons, project milestones, and improvement over time.</p>
                 </article>
-                <article>
+                <article class="future-card" data-category="idea">
                     <span>Idea 03</span>
                     <h3>Founder Diary Platform</h3>
                     <p>A lightweight public journal for builders to write updates, save lessons, and show their growth journey.</p>
                 </article>
-                <article>
+                <article class="future-card" data-category="idea">
                     <span>Idea 04</span>
                     <h3>Service Landing Page Templates</h3>
                     <p>Reusable website templates for tutors, freelancers, creators, and beginner startup founders.</p>
@@ -109,8 +123,9 @@
     </main>
 
     <footer>
-        <p>2026 KapriTech. Built by Suman Kapri with HTML and CSS.</p>
+        <p>2026 KapriTech. Built by Suman Kapri with HTML, CSS, and JavaScript.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

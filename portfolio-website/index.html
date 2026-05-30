@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KapriTech is the Day 2 portfolio and founder journey of Suman Kapri, an aspiring learner building skills in web development and technology.">
+    <meta name="description" content="KapriTech is the Day 4 portfolio and founder journey of Suman Kapri, an aspiring learner building skills in web development and technology.">
     <meta property="og:title" content="KapriTech | Suman Kapri Portfolio">
-    <meta property="og:description" content="Day 2 portfolio, public learning, and the founder journey of Suman Kapri.">
+    <meta property="og:description" content="Day 4 portfolio, public learning, and the founder journey of Suman Kapri.">
     <meta property="og:image" content="assets/social-preview.svg">
     <title>KapriTech | Suman Kapri Portfolio</title>
     <link rel="icon" href="assets/kapritech-mark.svg" type="image/svg+xml">
@@ -21,7 +21,14 @@
                 <span>KapriTech</span>
             </a>
 
-            <div class="nav-links" aria-label="Main navigation">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Open navigation</span>
+            </button>
+
+            <div class="nav-links" id="main-navigation" aria-label="Main navigation">
                 <a class="active" href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="learning.html">Learning</a>
@@ -35,15 +42,22 @@
     <main>
         <section class="hero">
             <div class="hero-copy">
-                <p class="eyebrow">Day 2 portfolio website</p>
-                <h1>Suman Kapri is building KapriTech in public.</h1>
+                <p class="eyebrow">Welcome to KapriTech - Day 4</p>
+                <h1>Hi, I am Suman Kapri. I am building KapriTech one useful step at a time.</h1>
                 <p class="hero-text">
-                    KapriTech is my personal brand, learning base, and public journey as I grow from basics into real web development, practical websites, and useful digital products.
+                    This is my public learning home: a place where I practice web development, document progress, and turn small ideas into clear digital projects.
                 </p>
 
                 <div class="hero-actions">
                     <a class="button primary" href="projects.html">Explore work</a>
                     <a class="button secondary" href="learning.html">See learning plan</a>
+                </div>
+
+                <div class="hero-highlights" aria-label="KapriTech progress highlights">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Building in public</span>
                 </div>
             </div>
 
@@ -54,22 +68,22 @@
 
         <section class="section day-wrap">
             <div class="section-heading">
-                <p class="eyebrow">Day 2 wrap-up</p>
-                <h2>The foundation is now a real multi-page portfolio.</h2>
+                <p class="eyebrow">Day 4 progress</p>
+                <h2>The portfolio now has stronger interaction.</h2>
             </div>
 
             <div class="status-grid">
                 <article>
                     <strong>Built</strong>
-                    <p>Home, About, Learning, Solutions, Projects, and Contact pages with shared navigation.</p>
+                    <p>Responsive pages with mobile navigation, project filtering, and contact validation.</p>
                 </article>
                 <article>
                     <strong>Added</strong>
-                    <p>Brand assets, project visuals, founder photo, social preview, and skill icons.</p>
+                    <p>A contact form that prepares an email and project filters for browsing work.</p>
                 </article>
                 <article>
                     <strong>Next</strong>
-                    <p>Publish real project links, add JavaScript interactions, and write founder diary updates.</p>
+                    <p>Publish real project demos, add project detail pages, and keep writing founder diary updates.</p>
                 </article>
             </div>
         </section>
@@ -123,18 +137,19 @@
         </section>
 
         <section class="section final-cta">
-            <p class="eyebrow">Ready for Day 3</p>
-            <h2>Next, KapriTech should publish and prove.</h2>
+            <p class="eyebrow">Day 4 next step</p>
+            <h2>KapriTech is becoming clearer, warmer, and more useful.</h2>
             <p>
-                The next useful move is to make each project clickable, document what was learned, and add small JavaScript features that improve the experience.
+                The next useful move is to keep polishing the homepage, improve project details, and make every section feel easier to trust.
             </p>
             <a class="button primary" href="contact.html">Connect with KapriTech</a>
         </section>
     </main>
 
     <footer>
-        <p>2026 KapriTech. Built by Suman Kapri with HTML and CSS.</p>
+        <p>2026 KapriTech. Built by Suman Kapri with HTML, CSS, and JavaScript.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
