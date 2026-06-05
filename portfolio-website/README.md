@@ -1,51 +1,61 @@
 # KapriTech Portfolio Website
 
-Day 4 portfolio website for Suman Kapri and KapriTech.
+Day 10 portfolio website for Suman Kapri and KapriTech.
 
 ## What is inside
 
-- `index.html` - the complete website structure and content
+- `index.html` - homepage and Day 10 progress summary
 - `about.html` - founder story and KapriTech direction
 - `learning.html` - current skills and growth roadmap
 - `solutions.html` - problems KapriTech wants to solve and what it provides
 - `projects.html` - project list and project thumbnails
+- `project-portfolio.html` - portfolio website project details
+- `project-expense-tracker.html` - Day 10 project expense tracker details
+- `project-founder-diary.html` - founder diary project details
+- `project-learning-notes.html` - learning notes project details
 - `contact.html` - email, GitHub, LinkedIn, and contact reasons
 - `style.css` - all layout, colors, responsive styles, and visual design
-- `script.js` - mobile navigation interaction
-- `assets/` - KapriTech SVG brand mark, logo lockup, social preview, page visuals, skill icons, favicon, and project thumbnails
+- `script.js` - mobile navigation, theme toggle, filters, stats, and form behavior
+- `assets/` - active brand assets, page visuals, skill icons, social preview, and project thumbnails
 
 ## How to open
 
 Open `index.html` in a browser. No build tools or installation are required.
 
-## Day 2 wrap-up
+## Current structure
 
-- Converted the site into a multi-page portfolio
-- Added real brand assets, profile image, project visuals, and social preview metadata
-- Added a Solutions page for what KapriTech solves and provides
-- Added realistic future project interests
-- Added email, GitHub, and LinkedIn contact options
-- Added a homepage Day 2 progress snapshot
+```text
+KapriTech/
+├── index.html
+└── portfolio-website/
+    ├── about.html
+    ├── contact.html
+    ├── index.html
+    ├── learning.html
+    ├── project-expense-tracker.html
+    ├── project-founder-diary.html
+    ├── project-learning-notes.html
+    ├── project-portfolio.html
+    ├── projects.html
+    ├── README.md
+    ├── script.js
+    ├── solutions.html
+    ├── style.css
+    └── assets/
+```
 
-## Day 3 wrap-up
+## Day 10 update
 
-- Added a JavaScript-powered mobile navigation button
-- Improved mobile menu spacing, focus styles, and responsive behavior
-- Made project cards clickable
-- Updated homepage progress language from Day 2 to Day 3
-- Added Day 3 development documentation
-
-## Day 4 wrap-up
-
-- Added a contact form with JavaScript validation
-- Prepared valid contact submissions as email drafts
-- Added project filter buttons for live work, learning, and ideas
-- Updated homepage progress language from Day 3 to Day 4
-- Added Day 4 development documentation
+- Added Expense Tracker Pro to the portfolio
+- Added HTML, CSS, JavaScript, and Python Flask as the Day 10 stack
+- Added a new project detail page and custom thumbnail for the expense tracker
+- Updated homepage stats, proof sections, and next-step plan around full-stack progress
+- Updated project filters with a full-stack category
+- Updated learning and solutions pages to include simple web app foundations
 
 ## Next improvements
 
-- Add real project links as projects are published
-- Add project detail pages or richer live demo links
+- Add persistence, categories, summaries, and edit/delete actions to the expense tracker
+- Add richer live demo links, walkthroughs, and screenshots
 - Expand the founder diary and learning notes
 - Improve the content every week as KapriTech grows

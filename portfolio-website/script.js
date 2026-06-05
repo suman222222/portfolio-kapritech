@@ -12,6 +12,32 @@ const statDays = document.querySelector("#stat-days");
 const statPages = document.querySelector("#stat-pages");
 const statProjects = document.querySelector("#stat-projects");
 const statFeatures = document.querySelector("#stat-features");
+const savedTheme = localStorage.getItem("kapritech-theme");
+
+function applyTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem("kapritech-theme", theme);
+}
+
+applyTheme(savedTheme || "light");
+
+const themeButton = document.createElement("button");
+themeButton.className = "theme-toggle";
+themeButton.type = "button";
+themeButton.setAttribute("aria-label", "Toggle color theme");
+themeButton.textContent = document.documentElement.dataset.theme === "dark" ? "Light" : "Dark";
+
+const nav = document.querySelector(".nav");
+
+if (nav) {
+    nav.appendChild(themeButton);
+}
+
+themeButton.addEventListener("click", () => {
+    const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    applyTheme(nextTheme);
+    themeButton.textContent = nextTheme === "dark" ? "Light" : "Dark";
+});
 
 if (navToggle && navLinks) {
     navToggle.addEventListener("click", () => {
@@ -30,7 +56,7 @@ if (navToggle && navLinks) {
 }
 
 function welcomeUser() {
-    alert("Welcome to KapriTech. You are viewing the Day 4 JavaScript practice section.");
+    alert("Welcome to KapriTech. You are viewing the Day 10 project progress section.");
 }
 
 function updateMessage(message) {
@@ -65,6 +91,7 @@ if (statsUpdateButton) {
         increaseNumber(statProjects, 1);
         increaseNumber(statFeatures, 1);
         updateMessage("Stats updated with DOM manipulation. The numbers changed without reloading the page.");
+        statsUpdateButton.textContent = "Stats improved";
     });
 }
 

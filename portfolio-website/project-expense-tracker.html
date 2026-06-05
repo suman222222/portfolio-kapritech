@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expense Tracker Pro details for KapriTech Day 10.">
+    <meta property="og:title" content="Expense Tracker Pro | KapriTech">
+    <meta property="og:description" content="A Day 10 full-stack expense tracker built with HTML, CSS, JavaScript, and Python Flask.">
+    <meta property="og:image" content="assets/social-preview.svg">
+    <title>Expense Tracker Pro | KapriTech</title>
+    <link rel="icon" href="assets/kapritech-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="index.html" aria-label="KapriTech home">
+                <img class="brand-mark" src="assets/kapritech-mark.svg" alt="">
+                <span>KapriTech</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Open navigation</span>
+            </button>
+
+            <div class="nav-links" id="main-navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="learning.html">Learning</a>
+                <a href="solutions.html">Solutions</a>
+                <a class="active" href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero project-detail-hero">
+            <p class="eyebrow">Day 10 project detail</p>
+            <h1>Expense Tracker Pro</h1>
+            <p>A KapriTech web app for tracking expenses with search, summary cards, category filters, NPR currency, and edit/delete actions while practicing Flask backend thinking.</p>
+            <div class="project-meta">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Python Flask</span>
+                <span>Day 10</span>
+            </div>
+        </section>
+
+        <section class="section project-detail-layout">
+            <img src="assets/project-expense-tracker.svg" alt="Expense Tracker Pro app thumbnail">
+
+            <div class="detail-grid">
+                <article>
+                    <h2>Purpose</h2>
+                    <p>Help users record expenses, review totals, search transactions, and keep a clearer view of where money is going.</p>
+                </article>
+                <article>
+                    <h2>Built so far</h2>
+                    <ul>
+                        <li>Dark theme interface with a theme toggle</li>
+                        <li>Search bar for finding expenses quickly</li>
+                        <li>Summary cards for total expenses, transactions, categories, and food items</li>
+                        <li>Add-expense form with name, amount, date, category, and currency fields</li>
+                        <li>Expense table with edit and delete actions</li>
+                        <li>NPR currency display for local context</li>
+                        <li>Python Flask app structure and routes</li>
+                    </ul>
+                </article>
+                <article>
+                    <h2>Lessons learned</h2>
+                    <p>A useful app needs more than a form. Search, summaries, currency, actions, routes, validation, and data structure all need to work together.</p>
+                </article>
+                <article>
+                    <h2>Next improvements</h2>
+                    <p>Add stronger persistence, category charts, monthly summaries, validation messages, and a cleaner responsive table for mobile screens.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section detail-actions">
+            <a class="button primary" href="projects.html">Back to projects</a>
+            <a class="button secondary" href="learning.html">See learning stack</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 KapriTech. Built by Suman Kapri with HTML, CSS, JavaScript, and Python Flask.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

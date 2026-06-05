@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KapriTech projects by Suman Kapri.">
+    <meta name="description" content="KapriTech projects by Suman Kapri, including Expense Tracker Pro built with Flask.">
     <meta property="og:title" content="Projects | KapriTech">
-    <meta property="og:description" content="Portfolio website, founder diary, and learning notes by Suman Kapri.">
+    <meta property="og:description" content="Portfolio website, Expense Tracker Pro, founder diary, and learning notes by Suman Kapri.">
     <meta property="og:image" content="assets/social-preview.svg">
     <title>Projects | KapriTech</title>
     <link rel="icon" href="assets/kapritech-mark.svg" type="image/svg+xml">
@@ -41,51 +41,68 @@
 
     <main>
         <section class="page-hero">
-            <p class="eyebrow">Projects</p>
-            <h1>Current KapriTech work.</h1>
-            <p>These are the first public building blocks of the KapriTech journey, with future projects planned around real needs.</p>
+            <p class="eyebrow">Projects - Day 10</p>
+            <h1>Current KapriTech work, now including a full-stack web app.</h1>
+            <p>Each main project has a detail page that explains why it exists, what has been built, what was learned, and what should improve next.</p>
         </section>
 
         <section class="section projects-section">
+            <div class="project-note">
+                <strong>Day 10 update</strong>
+                <p>The newest project is Expense Tracker Pro, a KapriTech web app built with HTML, CSS, JavaScript, and Python Flask.</p>
+            </div>
+
             <div class="project-controls" aria-label="Project filters">
                 <button class="filter-button active" type="button" data-filter="all">All</button>
                 <button class="filter-button" type="button" data-filter="live">Live</button>
+                <button class="filter-button" type="button" data-filter="fullstack">Full-stack</button>
                 <button class="filter-button" type="button" data-filter="learning">Learning</button>
                 <button class="filter-button" type="button" data-filter="idea">Ideas</button>
             </div>
 
             <div class="project-list">
-                <a class="project-card" href="index.html" data-category="live" aria-label="Open Portfolio Website project">
+                <a class="project-card" href="project-portfolio.html" data-category="live" aria-label="Open Portfolio Website project details">
                     <img src="assets/project-portfolio.svg" alt="Portfolio website project thumbnail">
                     <div>
                         <p class="tag">Live foundation</p>
                         <h3>Portfolio Website</h3>
                     </div>
                     <p>
-                        My first personal website built with HTML and CSS. It introduces my name, brand, learning journey,
-                        current skills, projects, and contact details.
+                        My first personal website built with HTML, CSS, and JavaScript. It introduces the brand,
+                        learning journey, project evidence, and contact path.
                     </p>
                 </a>
 
-                <a class="project-card" href="../founder-diary/index.html" data-category="learning" aria-label="Open KapriTech Founder Diary project">
+                <a class="project-card" href="project-expense-tracker.html" data-category="fullstack" aria-label="Open Expense Tracker Pro project details">
+                    <img src="assets/project-expense-tracker.svg" alt="Expense Tracker Pro app thumbnail">
+                    <div>
+                        <p class="tag">Day 10 full-stack</p>
+                        <h3>Expense Tracker Pro</h3>
+                    </div>
+                    <p>
+                        A web app for recording expenses, searching entries, reviewing summary cards, and practicing Flask backend app structure.
+                    </p>
+                </a>
+
+                <a class="project-card" href="project-founder-diary.html" data-category="learning" aria-label="Open KapriTech Founder Diary project details">
                     <img src="assets/project-diary.svg" alt="Founder diary project thumbnail">
                     <div>
                         <p class="tag">Public learning</p>
                         <h3>KapriTech Founder Diary</h3>
                     </div>
                     <p>
-                        A place to document daily progress, lessons, mistakes, improvements, and the process of building a technology brand.
+                        A place to document daily progress, lessons, mistakes, improvements, and the process of building a technology brand in public.
                     </p>
                 </a>
 
-                <a class="project-card" href="../learning-notes/index.html" data-category="learning" aria-label="Open Learning Notes project">
+                <a class="project-card" href="project-learning-notes.html" data-category="learning" aria-label="Open Learning Notes project details">
                     <img src="assets/project-notes.svg" alt="Learning notes project thumbnail">
                     <div>
                         <p class="tag">Knowledge base</p>
                         <h3>Learning Notes</h3>
                     </div>
                     <p>
-                        Notes from web development practice, GitHub learning, design improvements, and future JavaScript study.
+                        Notes from web development practice, GitHub learning, design improvements, JavaScript features, and deployment lessons.
                     </p>
                 </a>
             </div>
@@ -123,7 +140,7 @@
     </main>
 
     <footer>
-        <p>2026 KapriTech. Built by Suman Kapri with HTML, CSS, and JavaScript.</p>
+        <p>2026 KapriTech. Built by Suman Kapri with HTML, CSS, JavaScript, and Python Flask.</p>
     </footer>
     <script src="script.js"></script>
 </body>

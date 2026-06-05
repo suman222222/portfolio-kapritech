@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Website project details for KapriTech.">
+    <meta property="og:title" content="Portfolio Website Project | KapriTech">
+    <meta property="og:description" content="Details, lessons, and next steps for the KapriTech portfolio website.">
+    <meta property="og:image" content="assets/social-preview.svg">
+    <title>Portfolio Website Project | KapriTech</title>
+    <link rel="icon" href="assets/kapritech-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="index.html" aria-label="KapriTech home">
+                <img class="brand-mark" src="assets/kapritech-mark.svg" alt="">
+                <span>KapriTech</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Open navigation</span>
+            </button>
+
+            <div class="nav-links" id="main-navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="learning.html">Learning</a>
+                <a href="solutions.html">Solutions</a>
+                <a class="active" href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero project-detail-hero">
+            <p class="eyebrow">Project detail</p>
+            <h1>Portfolio Website</h1>
+            <p>The main public home for KapriTech, built to show progress, skills, projects, and contact options.</p>
+            <div class="project-meta">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Day 10</span>
+            </div>
+        </section>
+
+        <section class="section project-detail-layout">
+            <img src="assets/project-portfolio.svg" alt="Portfolio website project thumbnail">
+
+            <div class="detail-grid">
+                <article>
+                    <h2>Purpose</h2>
+                    <p>Give KapriTech a clear online starting point that can grow with daily learning and real project work.</p>
+                </article>
+                <article>
+                    <h2>Built so far</h2>
+                    <ul>
+                        <li>Multi-page website structure</li>
+                        <li>Responsive mobile navigation</li>
+                        <li>Project filters and clickable project cards</li>
+                        <li>Contact form validation</li>
+                        <li>Homepage stats and message buttons</li>
+                        <li>Day 10 project detail for the Flask expense tracker</li>
+                    </ul>
+                </article>
+                <article>
+                    <h2>Lessons learned</h2>
+                    <p>Small features become easier when HTML structure, CSS classes, and JavaScript selectors are named clearly.</p>
+                </article>
+                <article>
+                    <h2>Next improvements</h2>
+                    <p>Connect real demos, improve page content, and make the site easier to share with people reviewing KapriTech.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section detail-actions">
+            <a class="button primary" href="projects.html">Back to projects</a>
+            <a class="button secondary" href="contact.html">Share feedback</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 KapriTech. Built by Suman Kapri with HTML, CSS, JavaScript, and Python Flask.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
