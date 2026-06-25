@@ -56,7 +56,7 @@ if (navToggle && navLinks) {
 }
 
 function welcomeUser() {
-    alert("Welcome to KapriTech. You are viewing the Day 10 project progress section.");
+    alert("Welcome to KapriTech Day 10. The portfolio now features Expense Tracker Pro and Python Flask progress.");
 }
 
 function updateMessage(message) {
@@ -80,7 +80,7 @@ messageButtons.forEach((button) => {
 if (alertButton) {
     alertButton.addEventListener("click", () => {
         welcomeUser();
-        updateMessage("The alert button used JavaScript to show a browser message.");
+        updateMessage("Alert updated for Day 10: Expense Tracker Pro is now part of the KapriTech portfolio.");
     });
 }
 
@@ -90,7 +90,7 @@ if (statsUpdateButton) {
         increaseNumber(statPages, 1);
         increaseNumber(statProjects, 1);
         increaseNumber(statFeatures, 1);
-        updateMessage("Stats updated with DOM manipulation. The numbers changed without reloading the page.");
+        updateMessage("Day 10 stats updated with JavaScript. The portfolio now highlights Expense Tracker Pro and Flask progress.");
         statsUpdateButton.textContent = "Stats improved";
     });
 }
