@@ -14,298 +14,417 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <nav class="nav">
-            <a class="brand" href="index.html" aria-label="KapriTech home">
-                <img class="brand-mark" src="assets/kapritech-mark.svg" alt="">
-                <span>KapriTech</span>
-            </a>
 
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span class="sr-only">Open navigation</span>
-            </button>
+  <!-- ================= HEADER ================= -->
+<header class="site-header">
 
-            <div class="nav-links" id="main-navigation" aria-label="Main navigation">
-                <a class="active" href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="learning.html">Learning</a>
-                <a href="solutions.html">Solutions</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+
+            <img src="assets/kapritech-mark.svg" alt="KapriTech Logo">
+
+            <span>KapriTech</span>
+
+        </a>
+
+        <ul class="nav-links">
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#services">Services</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#technologies">Technologies</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <a href="#contact" class="nav-btn">
+            Let's Talk
+        </a>
+
+    </nav>
+
+</header>
 
     <main>
-        <section class="hero">
-            <div class="hero-copy">
-                <p class="eyebrow">Building software that solves real-world problems.</p>
-                <h1>Hi, I am Suman Kapri. KapriTech is my public proof of learning, building, and improving.</h1>
-                <p class="hero-text">
-                    Day 10 adds a full-stack project: Expense Tracker Pro, a KapriTech web app built with HTML, CSS, JavaScript, and Python Flask to manage expenses, search records, and review spending totals.
-                </p>
 
-                <div class="hero-actions">
-                    <a class="button primary" href="projects.html">Explore work</a>
-                    <a class="button secondary" href="learning.html">See learning plan</a>
-                    <a class="button secondary" href="project-expense-tracker.html">View Day 10 project</a>
-                </div>
+        <!-- ================= HERO ================= -->
 
-                <div class="hero-highlights" aria-label="KapriTech progress highlights">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Python Flask</span>
-                    <span>Expense Tracker Pro</span>
-                    <span>Building in public</span>
-                </div>
-            </div>
+<section class="hero" id="home">
 
-            <div class="hero-visual">
-                <img src="assets/hero-workspace.svg" alt="Illustration of the KapriTech learning workspace">
-            </div>
-        </section>
+    <div class="hero-content">
 
-        <section class="section day-wrap">
-            <div class="section-heading">
-                <p class="eyebrow">Day 10 progress</p>
-                <h2>The portfolio now includes Expense Tracker Pro.</h2>
-            </div>
+        <div class="hero-left">
 
-            <div class="status-grid">
-                <article>
-                    <strong>Built</strong>
-                    <p>Expense Tracker Pro uses frontend pages, JavaScript behavior, and Python Flask backend routes.</p>
-                </article>
-                <article>
-                    <strong>Added</strong>
-                    <p>A new project card, detail page, updated stats, and learning proof for Flask and app logic practice.</p>
-                </article>
-                <article>
-                    <strong>Next</strong>
-                    <p>Improve storage, add categories and summaries, polish the interface, and publish a live demo when ready.</p>
-                </article>
-            </div>
-        </section>
+            <span class="hero-tag">
+                SOFTWARE • WEB • DIGITAL SOLUTIONS
+            </span>
 
-        <section class="section focus-section">
-            <div class="focus-strip">
-                <div>
-                    <p class="eyebrow">Today's focus</p>
-                    <h2>Show that KapriTech can move from static pages into useful web applications.</h2>
-                </div>
-                <ul class="focus-list">
-                    <li>Flask routes</li>
-                    <li>Expense forms</li>
-                    <li>Project data</li>
-                    <li>UI polish</li>
-                    <li>Public proof</li>
-                </ul>
-            </div>
-        </section>
+            <h1>
+                Building Modern Websites &
+                Software Solutions
+            </h1>
 
-        <section class="section stats-section">
-            <div class="section-heading">
-                <p class="eyebrow">Build stats</p>
-                <h2>KapriTech progress that updates with buttons.</h2>
-            </div>
-
-            <div class="stats-panel">
-                <div class="stats-grid" aria-label="KapriTech current stats">
-                    <article>
-                        <span id="stat-days">10</span>
-                        <p>Days building</p>
-                    </article>
-                    <article>
-                        <span id="stat-pages">12</span>
-                        <p>Pages created</p>
-                    </article>
-                    <article>
-                        <span id="stat-projects">4</span>
-                        <p>Projects listed</p>
-                    </article>
-                    <article>
-                        <span id="stat-features">7</span>
-                        <p>App features</p>
-                    </article>
-                </div>
-
-                <div class="message-panel">
-                    <p class="message-output" id="message-output" aria-live="polite">
-                        Click a button to update this Day 10 message with JavaScript.
-                    </p>
-
-                    <div class="message-actions">
-                        <button class="button primary message-button" type="button" data-message="Welcome to KapriTech. Day 10 is about building Expense Tracker Pro with Flask.">
-                            Welcome message
-                        </button>
-                        <button class="button secondary message-button" type="button" data-message="KapriTech is growing through HTML, CSS, JavaScript, Python, Flask, and public practice.">
-                            Growth message
-                        </button>
-                        <button class="button secondary stats-update-button" type="button">
-                            Improve stats
-                        </button>
-                        <button class="button secondary alert-button" type="button">
-                            Show alert
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section proof-section">
-            <div class="section-heading">
-                <p class="eyebrow">Proof of progress</p>
-                <h2>Learning Journey.</h2>
-            </div>
-
-            <div class="proof-list">
-                <article>
-                    <span>01</span>
-                    <h3>Real app idea</h3>
-                    <p>Expense Tracker Pro solves a practical problem: recording costs, searching expenses, and understanding where money is going.</p>
-                </article>
-                <article>
-                    <span>02</span>
-                    <h3>Real full-stack practice</h3>
-                    <p>The build connects frontend structure with Flask routes, form handling, and application logic.</p>
-                </article>
-                <article>
-                    <span>03</span>
-                    <h3>Real documentation</h3>
-                    <p>The portfolio now explains what the app does, what was practiced, and what should improve next.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section-heading">
-                <p class="eyebrow">Current capabilities</p>
-                <h2>What KapriTech can already demonstrate.</h2>
-            </div>
-
-            <div class="capability-grid">
-                <article>
-                    <span>Design</span>
-                    <h3>Responsive website structure</h3>
-                    <p>Pages adapt across screen sizes with mobile navigation, readable sections, and consistent spacing.</p>
-                </article>
-                <article>
-                    <span>JavaScript</span>
-                    <h3>Interactive page behavior</h3>
-                    <p>Theme switching, project filters, form validation, alerts, message buttons, and live stat updates.</p>
-                </article>
-                <article>
-                    <span>Backend</span>
-                    <h3>Python Flask foundations</h3>
-                    <p>Routes, templates, form submissions, and app structure for turning static pages into working tools.</p>
-                </article>
-                <article>
-                    <span>Story</span>
-                    <h3>Project explanation</h3>
-                    <p>Each core project explains purpose, progress, lessons learned, and the next improvement.</p>
-                </article>
-                <article>
-                    <span>Publishing</span>
-                    <h3>GitHub Pages workflow</h3>
-                    <p>The portfolio is structured for public sharing and continuous improvement through commits and pushes.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="section build-plan-section">
-            <div class="section-heading">
-                <p class="eyebrow">Build plan</p>
-                <h2>The next version should make the expense tracker more useful.</h2>
-            </div>
-
-            <div class="build-plan">
-                <article>
-                    <strong>01</strong>
-                    <h3>Add persistence</h3>
-                    <p>Save expenses with a database or file storage so the app keeps records between sessions.</p>
-                </article>
-                <article>
-                    <strong>02</strong>
-                    <h3>Add summaries</h3>
-                    <p>Show totals by category, recent spending, and project budget status in a clear dashboard.</p>
-                </article>
-                <article>
-                    <strong>03</strong>
-                    <h3>Polish the UI</h3>
-                    <p>Improve empty states, form feedback, responsive layout, and the expense list experience.</p>
-                </article>
-                <article>
-                    <strong>04</strong>
-                    <h3>Publish a demo</h3>
-                    <p>Deploy the Flask app or share a walkthrough so visitors can review the working project.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section-heading">
-                <p class="eyebrow">Start here</p>
-                <h2>A simple website that can grow with the brand.</h2>
-            </div>
-
-            <div class="brand-showcase">
-                <img src="assets/kapritech-logo-horizontal.svg" alt="KapriTech logo with tagline">
-            </div>
-
-            <div class="quick-links">
-                <a href="about.html">
-                    <strong>About Suman</strong>
-                    <span>Founder story, direction, and current stage.</span>
-                </a>
-                <a href="learning.html">
-                    <strong>Learning</strong>
-                    <span>Current skills, roadmap, and next improvements.</span>
-                </a>
-                <a href="projects.html">
-                    <strong>Projects</strong>
-                    <span>Portfolio website, Expense Tracker Pro, founder diary, and learning notes.</span>
-                </a>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section-heading">
-                <p class="eyebrow">What KapriTech provides</p>
-                <h2>Simple digital help for people who need a clear online start.</h2>
-            </div>
-
-            <div class="value-grid">
-                <article>
-                    <h3>Portfolio and personal brand websites</h3>
-                    <p>Clean pages for students, learners, creators, and early professionals who need a public identity.</p>
-                </article>
-                <article>
-                    <h3>Small business web presence</h3>
-                    <p>Basic websites that explain what a business does, how to contact it, and why people should trust it.</p>
-                </article>
-                <article>
-                    <h3>Learning-first build process</h3>
-                    <p>Every project becomes practice, documentation, and a stronger foundation for the next version.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="section final-cta">
-            <p class="eyebrow">We are improving daily...</p>
-            <h2>KapriTech is turning practice into working apps.</h2>
             <p>
-                The next useful move is to improve Expense Tracker Pro with saved data, clearer summaries, stronger UI feedback, and a simple live demo path.
+
+                KapriTech is an independent software and web development
+                studio focused on building responsive websites,
+                web applications and practical software solutions for
+                students, startups and small businesses.
+
             </p>
-            <a class="button primary" href="contact.html">Connect with KapriTech</a>
-        </section>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View Projects
+                </a>
+
+                <a href="#services" class="btn secondary-btn">
+                    Our Services
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <video autoplay muted loop playsinline class="hero-video">
+
+                <source src="assets/Kapritech.mp4" type="video/mp4">
+
+            </video>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about section" id="about">
+
+    <div class="section-header">
+
+        <h2>Who We Are</h2>
+
+        <p>
+
+            KapriTech is a software and web development initiative
+            founded by Suman Kapri.
+
+            We build modern digital experiences using clean design,
+            responsive development and scalable technologies.
+
+        </p>
+
+    </div>
+
+    <div class="about-grid">
+
+        <div class="about-card">
+
+            <h3>5+</h3>
+
+            <span>Projects Built</span>
+
+        </div>
+
+        <div class="about-card">
+
+            <h3>8+</h3>
+
+            <span>Technologies</span>
+
+        </div>
+
+        <div class="about-card">
+
+            <h3>100%</h3>
+
+            <span>Responsive Design</span>
+
+        </div>
+
+        <div class="about-card">
+
+            <h3>Always</h3>
+
+            <span>Learning</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services section" id="services">
+
+    <div class="section-header">
+
+        <h2>Our Services</h2>
+
+        <p>
+            We help students, startups and small businesses
+            build their online presence and digital products.
+        </p>
+
+    </div>
+
+    <div class="services-grid">
+
+        <article class="service-card">
+
+            <div class="service-icon">🌐</div>
+
+            <h3>Website Development</h3>
+
+            <p>
+                Modern responsive websites built with
+                performance and accessibility in mind.
+            </p>
+
+        </article>
+
+        <article class="service-card">
+
+            <div class="service-icon">💼</div>
+
+            <h3>Portfolio Websites</h3>
+
+            <p>
+                Professional personal portfolios for
+                students, developers and creators.
+            </p>
+
+        </article>
+
+        <article class="service-card">
+
+            <div class="service-icon">⚡</div>
+
+            <h3>Web Applications</h3>
+
+            <p>
+                Interactive web applications using
+                JavaScript, Python and Flask.
+            </p>
+
+        </article>
+
+        <article class="service-card">
+
+            <div class="service-icon">🎨</div>
+
+            <h3>UI / UX Design</h3>
+
+            <p>
+                Clean interfaces, wireframes and
+                user-focused digital experiences.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="projects section" id="projects">
+
+    <div class="section-header">
+
+        <h2>Featured Projects</h2>
+
+        <p>
+            A selection of projects built and maintained
+            by KapriTech.
+        </p>
+
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- Project 1 -->
+
+        <article class="project-card">
+
+            <h3>Expense Tracker</h3>
+
+            <span class="project-tag">
+                HTML • CSS • JavaScript • Flask
+            </span>
+
+            <p>
+                Track expenses, manage records,
+                and monitor spending.
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="#">Live Demo</a>
+
+                <a href="#">GitHub</a>
+
+                <a href="#">Details</a>
+
+            </div>
+
+        </article>
+
+        <!-- Project 2 -->
+
+        <article class="project-card">
+
+            <h3>ResumePilot</h3>
+
+            <span class="project-tag">
+                Coming Soon
+            </span>
+
+            <p>
+                AI-powered resume optimization
+                platform.
+            </p>
+
+        </article>
+
+        <!-- Project 3 -->
+
+        <article class="project-card">
+
+            <h3>Career Compass AI</h3>
+
+            <span class="project-tag">
+                Coming Soon
+            </span>
+
+            <p>
+                Smart career guidance platform
+                powered by AI.
+            </p>
+
+        </article>
+
+        <!-- Project 4 -->
+
+        <article class="project-card">
+
+            <h3>KapriTech Portfolio</h3>
+
+            <span class="project-tag">
+                Active Project
+            </span>
+
+            <p>
+                Official company website and
+                founder journey.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ================= TECHNOLOGIES ================= -->
+
+<section class="technologies section" id="technologies">
+
+    <div class="section-header">
+
+        <h2>Technology Stack</h2>
+
+        <p>
+            Technologies currently used at KapriTech.
+        </p>
+
+    </div>
+
+    <div class="tech-grid">
+
+        <div class="tech-item">
+            <img src="assets/html.png" alt="HTML">
+            <span>HTML5</span>
+        </div>
+
+        <div class="tech-item">
+            <img src="assets/css.png" alt="CSS">
+            <span>CSS3</span>
+        </div>
+
+        <div class="tech-item">
+            <img src="assets/javascript.png" alt="JavaScript">
+            <span>JavaScript</span>
+        </div>
+
+        <div class="tech-item">
+            <img src="assets/python.png" alt="Python">
+            <span>Python</span>
+        </div>
+
+        <div class="tech-item">
+            <img src="assets/flask.png" alt="Flask">
+            <span>Flask</span>
+        </div>
+
+        <div class="tech-item">
+            <img src="assets/git.png" alt="Git">
+            <span>Git</span>
+        </div>
+
+        <div class="tech-item">
+            <img src="assets/github.png" alt="GitHub">
+            <span>GitHub</span>
+        </div>
+
+        <div class="tech-item">
+            <img src="assets/mysql.png" alt="MySQL">
+            <span>MySQL</span>
+        </div>
+
+        <div class="tech-item">
+            <img src="assets/figma.png" alt="Figma">
+            <span>Figma</span>
+        </div>
+
+    </div>
+
+</section>
+        
+
+        
+       
+
+        
+
+        
+        
+
+       
+
+    
     </main>
 
     <footer>
-        <p>2026 KapriTech. Built by Suman Kapri with HTML, CSS, JavaScript, and Python Flask.</p>
+    <p>2026 KapriTech. Built by Suman Kapri.</p>
     </footer>
     <script src="script.js"></script>
 </body>
