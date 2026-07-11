@@ -5,31 +5,27 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://suman222222.github.io/portfolio-kapritech/portfolio-website/index.html</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://suman222222.github.io/portfolio-kapritech/portfolio-website/about.html</loc>
+    <loc>https://suman222222.github.io/portfolio-kapritech/about.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://suman222222.github.io/portfolio-kapritech/portfolio-website/services.html</loc>
+    <loc>https://suman222222.github.io/portfolio-kapritech/services.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://suman222222.github.io/portfolio-kapritech/portfolio-website/projects.html</loc>
+    <loc>https://suman222222.github.io/portfolio-kapritech/projects.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://suman222222.github.io/portfolio-kapritech/portfolio-website/contact.html</loc>
+    <loc>https://suman222222.github.io/portfolio-kapritech/contact.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://suman222222.github.io/portfolio-kapritech/portfolio-website/project-expense-tracker.html</loc>
+    <loc>https://suman222222.github.io/portfolio-kapritech/project-expense-tracker.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://suman222222.github.io/portfolio-kapritech/portfolio-website/project-portfolio.html</loc>
+    <loc>https://suman222222.github.io/portfolio-kapritech/project-portfolio.html</loc>
     <priority>0.6</priority>
   </url>
 </urlset>
