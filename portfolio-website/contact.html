@@ -48,8 +48,10 @@
                     <h3>Let's connect</h3>
                     <p>You can reach us via email, social media, or fill out the form. We'll get back to you within 24 hours.</p>
                     <ul class="contact-links">
-                        <li><a href="mailto:hello@kapritech.com">📧 kapri.suman0023@gmail.com</a></li>
-                        <li><a href="https://www.linkedin.com/in/sumankapri/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a></li>
+                        <li><a href="mailto:hello@kapritech.com">📧 hello@kapritech.com</a></li>
+                        <li><a href="#">🐦 Twitter</a></li>
+                        <li><a href="#">💼 LinkedIn</a></li>
+                        <li><a href="#">🐙 GitHub</a></li>
                     </ul>
                     <div style="margin-top: 32px; padding: 24px; background: var(--soft-blue); border-radius: var(--radius); border: 1px solid var(--line);">
                         <h4 style="margin-bottom: 6px;">📍 Based in</h4>
@@ -83,7 +85,7 @@
 
     <script src="script.js"></script>
     <script>
-        // theme/nav + contact form
+        // Theme, Mobile Nav, and Contact Form script
         document.addEventListener('DOMContentLoaded', function() {
             const toggle = document.querySelector('.theme-toggle');
             const root = document.documentElement;
@@ -111,7 +113,6 @@
                     });
                 });
             }
-            // form
             const form = document.getElementById('contactForm');
             const status = document.getElementById('formStatus');
             if (form && status) {
