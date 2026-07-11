@@ -2,147 +2,125 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KapriTech projects by Suman Kapri, including Expense Tracker Pro built with Flask.">
-    <meta property="og:title" content="Projects | KapriTech">
-    <meta property="og:description" content="Portfolio website, Expense Tracker Pro, founder diary, and learning notes by Suman Kapri.">
-    <meta property="og:image" content="assets/social-preview.svg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="All projects built by KapriTech – expense tracker, portfolio, and upcoming AI tools." />
     <title>Projects | KapriTech</title>
-    <link rel="icon" href="assets/kapritech-mark.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/kapritech-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
     <header class="site-header">
-        <nav class="nav">
-            <a class="brand" href="index.html" aria-label="KapriTech home">
-                <img class="brand-mark" src="assets/kapritech-mark.svg" alt="">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/kapritech-mark.svg" alt="KapriTech Logo" class="brand-mark" />
                 <span>KapriTech</span>
             </a>
-
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span class="sr-only">Open navigation</span>
+            <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
             </button>
-
-            <div class="nav-links" id="main-navigation" aria-label="Main navigation">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="learning.html">Learning</a>
-                <a href="solutions.html">Solutions</a>
-                <a class="active" href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="index.html#technologies">Technologies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">🌓</button>
+                <a href="contact.html" class="nav-btn">Let's Talk</a>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="page-hero">
-            <p class="eyebrow">Projects - Day 10</p>
-            <h1>Current KapriTech work, now including a full-stack web app.</h1>
-            <p>Each main project has a detail page that explains why it exists, what has been built, what was learned, and what should improve next.</p>
-        </section>
-
-        <section class="section projects-section">
-            <div class="project-note">
-                <strong>Day 10 update</strong>
-                <p>The newest project is Expense Tracker Pro, a KapriTech web app built with HTML, CSS, JavaScript, and Python Flask.</p>
-            </div>
-
-            <div class="project-controls" aria-label="Project filters">
-                <button class="filter-button active" type="button" data-filter="all">All</button>
-                <button class="filter-button" type="button" data-filter="live">Live</button>
-                <button class="filter-button" type="button" data-filter="fullstack">Full-stack</button>
-                <button class="filter-button" type="button" data-filter="learning">Learning</button>
-                <button class="filter-button" type="button" data-filter="idea">Ideas</button>
-            </div>
-
-            <div class="project-list">
-                <a class="project-card" href="project-portfolio.html" data-category="live" aria-label="Open Portfolio Website project details">
-                    <img src="assets/project-portfolio.svg" alt="Portfolio website project thumbnail">
-                    <div>
-                        <p class="tag">Live foundation</p>
-                        <h3>Portfolio Website</h3>
-                    </div>
-                    <p>
-                        My personal website now shows HTML, CSS, JavaScript, Python Flask progress, project evidence,
-                        learning journey, and contact path.
-                    </p>
-                </a>
-
-                <a class="project-card" href="project-expense-tracker.html" data-category="fullstack" aria-label="Open Expense Tracker Pro project details">
-                    <img src="assets/project-expense-tracker.svg" alt="Expense Tracker Pro app thumbnail">
-                    <div>
-                        <p class="tag">Day 10 full-stack</p>
-                        <h3>Expense Tracker Pro</h3>
-                    </div>
-                    <p>
-                        A web app for recording expenses, searching entries, reviewing summary cards, and practicing Flask backend app structure.
-                    </p>
-                </a>
-
-                <a class="project-card" href="project-founder-diary.html" data-category="learning" aria-label="Open KapriTech Founder Diary project details">
-                    <img src="assets/project-diary.svg" alt="Founder diary project thumbnail">
-                    <div>
-                        <p class="tag">Public learning</p>
-                        <h3>KapriTech Founder Diary</h3>
-                    </div>
-                    <p>
-                        A place to document daily progress, lessons, mistakes, improvements, and the process of building a technology brand in public.
-                    </p>
-                </a>
-
-                <a class="project-card" href="project-learning-notes.html" data-category="learning" aria-label="Open Learning Notes project details">
-                    <img src="assets/project-notes.svg" alt="Learning notes project thumbnail">
-                    <div>
-                        <p class="tag">Knowledge base</p>
-                        <h3>Learning Notes</h3>
-                    </div>
-                    <p>
-                        Notes from web development practice, GitHub learning, design improvements, JavaScript features, and deployment lessons.
-                    </p>
-                </a>
-            </div>
+            <h1>Our Projects</h1>
+            <p>A curated selection of applications and websites built by KapriTech. Each project reflects our commitment to quality and innovation.</p>
         </section>
 
         <section class="section">
-            <div class="section-heading">
-                <p class="eyebrow">Future project interests</p>
-                <h2>Realistic ideas KapriTech can build next.</h2>
-            </div>
+            <div class="projects-grid" style="grid-template-columns: repeat(2, 1fr); gap: 30px;">
+                <!-- Expense Tracker -->
+                <div class="project-card" style="padding: 32px;">
+                    <h3>Expense Tracker</h3>
+                    <span class="project-tag">HTML • CSS • JS • Flask</span>
+                    <p>Track your daily expenses, manage budgets, and visualise spending with this full‑stack web application.</p>
+                    <div class="project-buttons">
+                        <a href="project-expense-tracker.html" class="project-link">View Details</a>
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
 
-            <div class="future-grid">
-                <article class="future-card" data-category="idea">
-                    <span>Idea 01</span>
-                    <h3>Local Business Starter Site</h3>
-                    <p>A clean one-page website package for small businesses with service details, contact links, and a trust-building layout.</p>
-                </article>
-                <article class="future-card" data-category="idea">
-                    <span>Idea 02</span>
-                    <h3>Student Progress Tracker</h3>
-                    <p>A simple web app to track daily learning, completed lessons, project milestones, and improvement over time.</p>
-                </article>
-                <article class="future-card" data-category="idea">
-                    <span>Idea 03</span>
-                    <h3>Founder Diary Platform</h3>
-                    <p>A lightweight public journal for builders to write updates, save lessons, and show their growth journey.</p>
-                </article>
-                <article class="future-card" data-category="idea">
-                    <span>Idea 04</span>
-                    <h3>Service Landing Page Templates</h3>
-                    <p>Reusable website templates for tutors, freelancers, creators, and beginner startup founders.</p>
-                </article>
+                <!-- KapriTech Portfolio -->
+                <div class="project-card" style="padding: 32px;">
+                    <h3>KapriTech Portfolio</h3>
+                    <span class="project-tag">HTML • CSS • JS</span>
+                    <p>This very website – a responsive portfolio showcasing our work, services, and the founder's journey.</p>
+                    <div class="project-buttons">
+                        <a href="project-portfolio.html" class="project-link">View Details</a>
+                        <a href="index.html" class="project-link">Live Site</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- ResumePilot (coming soon) -->
+                <div class="project-card" style="padding: 32px;">
+                    <h3>ResumePilot</h3>
+                    <span class="project-tag">Coming Soon</span>
+                    <p>AI‑powered resume optimisation platform that helps job seekers tailor their CVs to specific roles.</p>
+                </div>
+
+                <!-- Career Compass AI -->
+                <div class="project-card" style="padding: 32px;">
+                    <h3>Career Compass AI</h3>
+                    <span class="project-tag">Coming Soon</span>
+                    <p>Smart career guidance tool that uses AI to suggest learning paths and job opportunities based on user skills.</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>2026 KapriTech. Built by Suman Kapri with HTML, CSS, JavaScript, and Python Flask.</p>
+        <p>&copy; 2026 KapriTech. Built by Suman Kapri.</p>
     </footer>
+
     <script src="script.js"></script>
+    <script>
+        // same theme/nav inline script (same as before)
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggle = document.querySelector('.theme-toggle');
+            const root = document.documentElement;
+            const saved = localStorage.getItem('theme');
+            if (saved) root.setAttribute('data-theme', saved);
+            else if (window.matchMedia('(prefers-color-scheme: dark)').matches) root.setAttribute('data-theme', 'dark');
+            if (toggle) {
+                toggle.addEventListener('click', function() {
+                    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                    root.setAttribute('data-theme', next);
+                    localStorage.setItem('theme', next);
+                });
+            }
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            if (navToggle && navLinks) {
+                navToggle.addEventListener('click', function() {
+                    const open = navLinks.classList.toggle('is-open');
+                    navToggle.setAttribute('aria-expanded', open);
+                });
+                navLinks.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        navLinks.classList.remove('is-open');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

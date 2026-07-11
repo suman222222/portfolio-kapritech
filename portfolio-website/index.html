@@ -2,433 +2,368 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KapriTech is the Day 10 portfolio and founder journey of Suman Kapri, now showing Expense Tracker Pro built with HTML, CSS, JavaScript, and Python Flask.">
-    <meta property="og:title" content="KapriTech | Suman Kapri Portfolio">
-    <meta property="og:description" content="Day 10 portfolio, Flask expense tracker project, public learning, and the founder journey of Suman Kapri.">
-    <meta property="og:image" content="assets/social-preview.svg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="KapriTech is the  portfolio and founder journey of Suman Kapri , showcasing introduction and services" />
+    <meta property="og:title" content="KapriTech | Suman Kapri Portfolio" />
+    
+    <meta property="og:image" content="assets/social-preview.svg" />
     <title>KapriTech | Suman Kapri Portfolio</title>
-    <link rel="icon" href="assets/kapritech-mark.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/kapritech-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- ================= HEADER ================= -->
-<header class="site-header">
 
-    <nav class="navbar">
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                <img src="assets/kapritech-mark.svg" alt="KapriTech Logo" class="brand-mark" />
+                <span>KapriTech</span>
+            </a>
 
-        <a href="#home" class="logo">
+            <!-- Mobile toggle button -->
+            <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-            <img src="assets/kapritech-mark.svg" alt="KapriTech Logo">
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-            <span>KapriTech</span>
-
-        </a>
-
-        <ul class="nav-links">
-
-            <li><a href="#home">Home</a></li>
-
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#services">Services</a></li>
-
-            <li><a href="#projects">Projects</a></li>
-
-            <li><a href="#technologies">Technologies</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-        <a href="#contact" class="nav-btn">
-            Let's Talk
-        </a>
-
-    </nav>
-
-</header>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle dark/light theme">🌓</button>
+                <a href="#contact" class="nav-btn">Let's Talk</a>
+            </div>
+        </nav>
+    </header>
 
     <main>
 
-        <!-- ================= HERO ================= -->
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <span class="hero-tag">SOFTWARE • WEB • DIGITAL SOLUTIONS</span>
+                    <h1>Building Modern Websites &amp; Software Solutions</h1>
+                    <p>
+                        KapriTech is an independent software and web development
+                        studio focused on building responsive websites,
+                        web applications and practical software solutions for
+                        students, startups and small businesses.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn primary-btn">View Projects</a>
+                        <a href="#services" class="btn secondary-btn">Our Services</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Us</a>
+                    </div>
+                </div>
 
-<section class="hero" id="home">
-
-    <div class="hero-content">
-
-        <div class="hero-left">
-
-            <span class="hero-tag">
-                SOFTWARE • WEB • DIGITAL SOLUTIONS
-            </span>
-
-            <h1>
-                Building Modern Websites &
-                Software Solutions
-            </h1>
-
-            <p>
-
-                KapriTech is an independent software and web development
-                studio focused on building responsive websites,
-                web applications and practical software solutions for
-                students, startups and small businesses.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn primary-btn">
-                    View Projects
-                </a>
-
-                <a href="#services" class="btn secondary-btn">
-                    Our Services
-                </a>
-
-                <a href="#contact" class="btn secondary-btn">
-                    Contact Us
-                </a>
-
+                <div class="hero-right">
+                    <video autoplay muted loop playsinline class="hero-video" poster="assets/hero-poster.jpg">
+                        <source src="assets/Kapritech.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
-
-        </div>
-
-        <div class="hero-right">
-
-            <video autoplay muted loop playsinline class="hero-video">
-
-                <source src="assets/Kapritech.mp4" type="video/mp4">
-
-            </video>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= ABOUT ================= -->
-
-<section class="about section" id="about">
-
-    <div class="section-header">
-
-        <h2>Who We Are</h2>
-
-        <p>
-
-            KapriTech is a software and web development initiative
-            founded by Suman Kapri.
-
-            We build modern digital experiences using clean design,
-            responsive development and scalable technologies.
-
-        </p>
-
-    </div>
-
-    <div class="about-grid">
-
-        <div class="about-card">
-
-            <h3>5+</h3>
-
-            <span>Projects Built</span>
-
-        </div>
-
-        <div class="about-card">
-
-            <h3>8+</h3>
-
-            <span>Technologies</span>
-
-        </div>
-
-        <div class="about-card">
-
-            <h3>100%</h3>
-
-            <span>Responsive Design</span>
-
-        </div>
-
-        <div class="about-card">
-
-            <h3>Always</h3>
-
-            <span>Learning</span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= SERVICES ================= -->
-
-<section class="services section" id="services">
-
-    <div class="section-header">
-
-        <h2>Our Services</h2>
-
-        <p>
-            We help students, startups and small businesses
-            build their online presence and digital products.
-        </p>
-
-    </div>
-
-    <div class="services-grid">
-
-        <article class="service-card">
-
-            <div class="service-icon">🌐</div>
-
-            <h3>Website Development</h3>
-
-            <p>
-                Modern responsive websites built with
-                performance and accessibility in mind.
-            </p>
-
-        </article>
-
-        <article class="service-card">
-
-            <div class="service-icon">💼</div>
-
-            <h3>Portfolio Websites</h3>
-
-            <p>
-                Professional personal portfolios for
-                students, developers and creators.
-            </p>
-
-        </article>
-
-        <article class="service-card">
-
-            <div class="service-icon">⚡</div>
-
-            <h3>Web Applications</h3>
-
-            <p>
-                Interactive web applications using
-                JavaScript, Python and Flask.
-            </p>
-
-        </article>
-
-        <article class="service-card">
-
-            <div class="service-icon">🎨</div>
-
-            <h3>UI / UX Design</h3>
-
-            <p>
-                Clean interfaces, wireframes and
-                user-focused digital experiences.
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROJECTS ================= -->
-
-<section class="projects section" id="projects">
-
-    <div class="section-header">
-
-        <h2>Featured Projects</h2>
-
-        <p>
-            A selection of projects built and maintained
-            by KapriTech.
-        </p>
-
-    </div>
-
-    <div class="projects-grid">
-
-        <!-- Project 1 -->
-
-        <article class="project-card">
-
-            <h3>Expense Tracker</h3>
-
-            <span class="project-tag">
-                HTML • CSS • JavaScript • Flask
-            </span>
-
-            <p>
-                Track expenses, manage records,
-                and monitor spending.
-            </p>
-
-            <div class="project-buttons">
-
-                <a href="#">Live Demo</a>
-
-                <a href="#">GitHub</a>
-
-                <a href="#">Details</a>
-
+        </section>
+
+        <!-- ========== ABOUT ========== -->
+        <section class="about section" id="about">
+            <div class="section-header">
+                <h2>Who We Are</h2>
+                <p>
+                    KapriTech is a software and web development initiative
+                    founded by Suman Kapri.
+                    We build modern digital experiences using clean design,
+                    responsive development and scalable technologies.
+                </p>
             </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>5+</h3>
+                    <span>Projects Built</span>
+                </div>
+                <div class="about-card">
+                    <h3>8+</h3>
+                    <span>Technologies</span>
+                </div>
+                <div class="about-card">
+                    <h3>100%</h3>
+                    <span>Responsive Design</span>
+                </div>
+                <div class="about-card">
+                    <h3>Always</h3>
+                    <span>Learning</span>
+                </div>
+            </div>
+        </section>
 
-        </article>
+        <!-- ========== SERVICES ========== -->
+        <section class="services section" id="services">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>
+                    We help students, startups and small businesses
+                    build their online presence and digital products.
+                </p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Website Development</h3>
+                    <p>Modern responsive websites built with performance and accessibility in mind.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Portfolio Websites</h3>
+                    <p>Professional personal portfolios for students, developers and creators.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Web Applications</h3>
+                    <p>Interactive web applications using JavaScript, Python and Flask.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI / UX Design</h3>
+                    <p>Clean interfaces, wireframes and user-focused digital experiences.</p>
+                </article>
+            </div>
+        </section>
 
-        <!-- Project 2 -->
-
-        <article class="project-card">
-
-            <h3>ResumePilot</h3>
-
-            <span class="project-tag">
-                Coming Soon
-            </span>
-
-            <p>
-                AI-powered resume optimization
-                platform.
-            </p>
-
-        </article>
-
-        <!-- Project 3 -->
-
-        <article class="project-card">
-
-            <h3>Career Compass AI</h3>
-
-            <span class="project-tag">
-                Coming Soon
-            </span>
-
-            <p>
-                Smart career guidance platform
-                powered by AI.
-            </p>
-
-        </article>
-
-        <!-- Project 4 -->
-
-        <article class="project-card">
-
-            <h3>KapriTech Portfolio</h3>
-
-            <span class="project-tag">
-                Active Project
-            </span>
-
-            <p>
-                Official company website and
-                founder journey.
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-<!-- ================= TECHNOLOGIES ================= -->
-
-<section class="technologies section" id="technologies">
-
-    <div class="section-header">
-
-        <h2>Technology Stack</h2>
-
-        <p>
-            Technologies currently used at KapriTech.
-        </p>
-
-    </div>
-
-    <div class="tech-grid">
-
-        <div class="tech-item">
-            <img src="assets/html.png" alt="HTML">
-            <span>HTML5</span>
-        </div>
-
-        <div class="tech-item">
-            <img src="assets/css.png" alt="CSS">
-            <span>CSS3</span>
-        </div>
-
-        <div class="tech-item">
-            <img src="assets/javascript.png" alt="JavaScript">
-            <span>JavaScript</span>
-        </div>
-
-        <div class="tech-item">
-            <img src="assets/python.png" alt="Python">
-            <span>Python</span>
-        </div>
-
-        <div class="tech-item">
-            <img src="assets/flask.png" alt="Flask">
-            <span>Flask</span>
-        </div>
-
-        <div class="tech-item">
-            <img src="assets/git.png" alt="Git">
-            <span>Git</span>
-        </div>
-
-        <div class="tech-item">
-            <img src="assets/github.png" alt="GitHub">
-            <span>GitHub</span>
-        </div>
-
-        <div class="tech-item">
-            <img src="assets/mysql.png" alt="MySQL">
-            <span>MySQL</span>
-        </div>
-
-        <div class="tech-item">
-            <img src="assets/figma.png" alt="Figma">
-            <span>Figma</span>
-        </div>
-
-    </div>
-
-</section>
+        <!-- ========== PROJECTS ========== -->
+        <section class="projects section" id="projects">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>A selection of projects built and maintained by KapriTech.</p>
+            </div>
+            <div class="projects-grid">
 
 
-        
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <h3>Expense Tracker</h3>
+                    <span class="project-tag">HTML • CSS • JavaScript • Flask</span>
+                    <p>Track expenses, manage records, and monitor spending.</p>
+                    <div class="project-buttons">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                        <a href="#" class="project-link">Details</a>
+                    </div>
+                </article>
 
-        
-       
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <h3>ResumePilot</h3>
+                    <span class="project-tag">Coming Soon</span>
+                    <p>AI-powered resume optimization platform.</p>
+                </article>
 
-        
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <h3>Career Compass AI</h3>
+                    <span class="project-tag">Coming Soon</span>
+                    <p>Smart career guidance platform powered by AI.</p>
+                </article>
 
-        
-        
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <h3>KapriTech Portfolio</h3>
+                    <span class="project-tag">Active Project</span>
+                    <p>Official company website and founder journey.</p>
+                </article>
+            </div>
+        </section>
 
-       
+        <!-- ========== TECHNOLOGIES ========== -->
+        <section class="technologies section" id="technologies">
+            <div class="section-header">
+                <h2>Technology Stack</h2>
+                <p>Technologies currently used at KapriTech.</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <img src="assets/html logo.png" alt="HTML" />
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/css icon.png" alt="CSS" />
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/javascript icon.png" alt="JavaScript" />
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/python icon.png" alt="Python" />
+                    <span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/flask.png" alt="Flask" />
+                    <span>Flask</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/git icon.png" alt="Git" />
+                    <span>Git</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/github icon.png" alt="GitHub" />
+                    <span>GitHub</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/figma.png" alt="Figma" />
+                    <span>Figma</span>
+                </div>
+            </div>
+        </section>
 
-    
+        <!-- ========== CONTACT ========== -->
+        <section class="contact section" id="contact">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Have a project in mind? Let's talk about how we can help.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's connect</h3>
+                    <p>Reach out via email or social media, and we'll get back to you as soon as possible.</p>
+                    <ul class="contact-links">
+                        <li><a href="mailto:hello@kapritech.com">📧 kapri.suman0023@gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/sumankapri/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a></li>
+                    </ul>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="field-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required />
+                    </div>
+                    <div class="field-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com" required />
+                    </div>
+                    <div class="field-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Tell us about your project…" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </section>
+
     </main>
 
+    <!-- ========== FOOTER ========== -->
     <footer>
-    <p>2026 KapriTech. Built by Suman Kapri.</p>
+        <p>&copy; 2026 KapriTech. Built by Suman Kapri.</p>
     </footer>
+
     <script src="script.js"></script>
+
+    <!-- ========== INLINE FALLBACK SCRIPT (if script.js fails) ========== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // ---- Theme Toggle ----
+            const themeToggle = document.querySelector('.theme-toggle');
+            const root = document.documentElement;
+
+            // Check saved theme
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                root.setAttribute('data-theme', savedTheme);
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                root.setAttribute('data-theme', 'dark');
+            }
+
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function() {
+                    const current = root.getAttribute('data-theme');
+                    const next = current === 'dark' ? 'light' : 'dark';
+                    root.setAttribute('data-theme', next);
+                    localStorage.setItem('theme', next);
+                });
+            }
+
+            // ---- Mobile Nav Toggle ----
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (navToggle && navLinks) {
+                navToggle.addEventListener('click', function() {
+                    const isOpen = navLinks.classList.toggle('is-open');
+                    navToggle.setAttribute('aria-expanded', isOpen);
+                });
+
+                // Close nav on link click (mobile)
+                navLinks.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        navLinks.classList.remove('is-open');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            // ---- Contact Form ----
+            const form = document.getElementById('contactForm');
+            const status = document.getElementById('formStatus');
+
+            if (form && status) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    status.textContent = '✅ Thank you! Your message has been sent.';
+                    status.style.color = '#137a53';
+                    form.reset();
+                    setTimeout(function() {
+                        status.textContent = '';
+                    }, 4000);
+                });
+            }
+
+            // ---- Smooth scroll for nav links ----
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // ---- Active nav link highlight on scroll ----
+            const sections = document.querySelectorAll('section[id]');
+            const navAnchors = document.querySelectorAll('.nav-links a');
+
+            window.addEventListener('scroll', function() {
+                let current = 'home';
+                sections.forEach(function(section) {
+                    const top = section.offsetTop - 120;
+                    if (window.scrollY >= top) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                navAnchors.forEach(function(link) {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>
